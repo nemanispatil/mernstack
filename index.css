@@ -1,0 +1,266 @@
+ /* CSS styles */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-user-info {
+    margin-right: 20px;
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu .dropdown-content a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Additional styles for the employee creation page */
+.employee-container {
+    display: none;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.employee-container h2 {
+    margin-bottom: 20px;
+}
+
+.employee-container label {
+    text-align: left;
+}
+
+.employee-container input[type="text"],
+.employee-container input[type="email"],
+.employee-container select {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.employee-container input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.employee-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.employee-container button:hover {
+    background-color: #0056b3;
+}
+
+.employee-container .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.employee-container .close:hover,
+.employee-container .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS styles */
+
+
+.container1 {
+    position: relative; /* Ensure close button is positioned relative to this container */
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* Close button styles */
+.close-button {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#searchInput {
+    float: right;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.edit-button, .delete-button {
+    cursor: pointer;
+    color: #007bff;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.edit-button:hover, .delete-button:hover {
+    text-decoration: underline;
+}
+
+.edit-button:focus, .delete-button:focus {
+    outline: none;
+}
+
+.edit-button::after, .delete-button::after {
+    content: "|";
+    margin-left: 5px;
+}
+
+.edit-button:last-child::after, .delete-button:last-child::after {
+    content: "";
+}
